@@ -10,8 +10,30 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
-        <script src="boostrap-3.3.4-dist/js/bootstrap.min.js"></script>
-        <script src="boostrap-3.3.4-dist/js/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/styles.css">
+        <script type="text/javascript" src="boostrap-3.3.4-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="boostrap-3.3.4-dist/js/jquery-2.1.4.min.js"></script>
+
+        <!-- slider -->
+        <link rel='stylesheet' id='camera-css'  href='../css/camera.css' type='text/css' media='all'>
+        <script type='text/javascript' src='../scripts/jquery.min.js'></script>
+        <script type='text/javascript' src='../scripts/jquery.mobile.customized.min.js'></script>
+        <script type='text/javascript' src='../scripts/jquery.easing.1.3.js'></script> 
+        <script type='text/javascript' src='../scripts/camera.js'></script> 
+
+        <script>
+            jQuery(function () {
+
+                jQuery('#camera_wrap_3').camera({
+                    height: '56%',
+                    pagination: false,
+                    thumbnails: true,
+                    imagePath: '../images/'
+                });
+
+            });
+        </script>
+
         <title>Proyecto WebPet</title>
     </head>
     <body>
@@ -76,6 +98,37 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+
+
+                <div class="camera_wrap camera_emboss" id="camera_wrap_3">
+                    <div data-thumb="../images/slides/thumbs/big_bunny_fake.jpg" data-src="../images/slides/big_bunny_fake.jpg">
+                        <iframe src="http://player.vimeo.com/video/2203727" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                    <div data-thumb="../images/slides/thumbs/leaf.jpg" data-src="../images/slides/leaf.jpg">
+                        <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+                    </div>
+                    <div data-thumb="../images/slides/thumbs/road.jpg" data-src="../images/slides/road.jpg" data-time="1500" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank">
+                        <div class="camera_caption fadeFromBottom">
+                            Changed the time and the transition time of this slide
+                        </div>
+                    </div>
+                </div><!-- #camera_wrap_3 -->
+
+            </div>
+            <div class="camera_wrap camera_emboss" id="camera_wrap_3">
+                <div data-thumb="../images/slides/thumbs/big_bunny_fake.jpg" data-src="../images/slides/big_bunny_fake.jpg">
+                    <iframe src="http://player.vimeo.com/video/2203727" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+                <div data-thumb="../images/slides/thumbs/leaf.jpg" data-src="../images/slides/leaf.jpg">
+                    <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+                </div>
+                <div data-thumb="../images/slides/thumbs/road.jpg" data-src="../images/slides/road.jpg" data-time="1500" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank">
+                    <div class="camera_caption fadeFromBottom">
+                        Changed the time and the transition time of this slide
+                    </div>
+                </div>
+            </div><!-- #camera_wrap_3 -->
         </div>
     </body>
 </html>
